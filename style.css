@@ -1,0 +1,145 @@
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #4d4e53;
+  background-color: #ffffff;
+  scroll-padding: 20px;
+}
+
+nav {
+  position: fixed;
+  width: 260px;
+  border-right: 1px solid #4d4e53;
+}
+
+#title {
+  color: black;
+  font-size: 2.7rem;
+  font-weight: normal;
+  margin-top: 0;
+  padding-left: 2rem;
+}
+
+#nav-ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav-li {
+  border-bottom: 1px solid #4d4e53;
+}
+
+.nav-li:last-child {
+  border-bottom: none;
+}
+
+.nav-li:first-child {
+  border-top: 1px solid #4d4e53;
+}
+
+.nav-li a {
+  padding-bottom: .75rem;
+  padding-top: .75rem;
+  padding-left: 2rem;
+  display: block;
+  text-decoration: none;
+  color: #4d4e53;
+  background-color: #ffffff;
+  -webkit-transition: background-color .1s;
+}
+
+.nav-li a:hover {
+  -webkit-transition: background-color .1s;
+  background-color: #4d4e53;
+  color: white;
+}
+
+main {
+  padding-left: 29rem;
+  padding-right: 4rem;
+}
+
+.section-header {
+  color: black;
+  font-weight: normal;
+  font-size: 2.7rem;
+}
+
+.section-p {
+  padding-left: 2rem;
+}
+
+.section-ul {
+  padding-left: 6rem;
+}
+
+.section-li {
+  padding-bottom: 1rem;
+}
+
+.section-pre {
+  background-color: #f7f7f7;
+  padding: 1.6rem;
+  margin-left: 3rem;
+  white-space: pre-wrap;       
+}
+
+#ret {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  font-size: 2.5rem;
+  color: black;
+  text-align: center;
+  border-radius: 50%;
+  background-color: rgba(100, 100, 100, .3);
+  -webkit-transition: background-color .5s;
+  display: block;
+  text-decoration: none;
+  width: 4rem;
+  height: 4rem;
+}
+
+#ret:hover {
+  background-color: rgba(100, 100, 100, .6);
+  -webkit-transition: background-color .5s;
+}
+
+@media(max-width: 800px) {
+  body {
+    min-width: 400px;
+  }
+  
+  nav {
+    position: static;
+    width: 100%;
+    border-right: none;
+  }
+  
+  #title {
+    text-align: center;
+    padding-top: 2rem;
+  }
+  
+  .nav-li a {
+    padding-left: 3rem;
+  }
+  
+  .nav-li:last-child {
+   border-bottom: 1px solid #4d4e53;
+  }
+  
+  main {
+    padding-top: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
